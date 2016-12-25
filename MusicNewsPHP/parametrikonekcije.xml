@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<konekcija>
+   <host>localhost:3306</host>
+  <korisnik>root</korisnik>
+  <sifra></sifra>
+   <nazivbaze>musicnews</nazivbaze>
+</konekcija>
