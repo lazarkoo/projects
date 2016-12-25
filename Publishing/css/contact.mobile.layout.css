@@ -1,0 +1,80 @@
+#contactform{
+	position: absolute;
+	left:0%;
+	top:2%;
+	width:100%;
+	height:50%;
+	font-size:0.8em;
+}
+
+#contacttittle{
+	position:absolute;
+	left:0%;
+}
+
+#contactlabel1{
+	position:absolute;
+	left:0%;
+	top:10%;
+}
+
+#contactlabel2{
+	position:absolute;
+	left:0%;
+	top:32%;
+}
+
+#contactlabel3{
+	position:absolute;
+	left:0%;
+	top:54%;
+}
+
+#contactinput1 {
+	position:absolute;
+	left:0%;
+	top:15%;
+}
+
+#contactinput2 {
+	position:absolute;
+	left:0%;
+	top:37%;
+}
+
+#contactinput3{
+	position:absolute;
+	left:0%;
+	top:59%;
+}
+
+#contactbutton{
+	position:absolute;
+	left:0%;
+	top:85%;
+    background-color: #0fa4a9;
+    border: none;
+	font-weight:bold;
+	border-radius:20px;
+	width:80px;
+	height:20px;
+	font-size:0.7em;
+	background: radial-gradient(white, #0fa4a9);
+}
+
+#map{
+	position: absolute;
+	left:0%;
+	top:55%;
+	width:100%;
+	height:25%;
+	font-family: Conthrax;
+	font-size:0.7em;
+}
+
+
+   .googlemap {
+	   Display:none;
+    }
+	
+

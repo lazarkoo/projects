@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Издавачка Делатност</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/base.layout.css" type="text/css" />
+<link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/base.layout.mobile.css" type="text/css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- End Save for Web Styles -->
+<script type = "text/javascript">
+
+	function proveriPolja()
+	{
+		var username = document.getElementById('username').value.trim();
+		var email = document.getElementById('email').value.trim();
+		var password = document.getElementById('password').value.trim();
+		var passwordrepeat = document.getElementById('passwordrepeat').value.trim();
+		
+		if (username == "" ||  email == "" || password == "" || passwordrepeat=="" )
+		{
+			alert("Молимо Вас попуните сва поља!");
+			return false;
+		}
+		
+		return true;
+		
+	}
+
+	function register()
+	{
+		if (proveriPolja()) document.registration.submit();
+	}
+
+
+</script>
+</head>
+<body style="background-color:#FFFFFF; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;">
+<!-- Save for Web Slices (webdesign.psd) -->
+<div id="Table_01">
+	<div id="top">
+	<div id="mail">
+		<img src="images/mail.png" width="25" height="25"  />
+		<label>izdavackadelatnost@tfzr.uns.ac.rs</label>
+		
+	</div>
+	<div id="login">
+	<label><a href="login.html">Улогуј се</a> | <a href="register.html">Региструј се</a></label>
+	</div>
+	</div>
+	<div id="header">
+	<div id="logo">
+		<a href="pocetna.html"><img src="images/logo.png" width="200" height="90" alt="" /></a>
+	</div>
+	
+	<div id="menu">
+		<nav>
+			<div id="nav">
+			<ul>
+				<il><a href="pocetna.html">Почетна</a></il>
+				<il><a href="novosti.html">Новости</a></il>
+                <il><a href="rukopisi.html">Рукописи</a></il>
+                <il><a href="galerija.html">Галерија</a></il>
+                <il><a href="kontakt.html">Контакт</a></il> 
+			 </ul> 
+			 </div>
+		</nav>
+		    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="jquery.ultimate-burger-menu.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#nav').burgerMenu({
+                translate: true,
+                menuWidth: '50%',
+                menuHeight: '100%',
+                menuBorder: 'none',
+                animateSpeed: 500,
+                linkBorderBottom: 'none',
+				position: 'right',
+                keepButtonNextToMenu: true,
+                overlay: '#ffffff'
+            });
+        });
+    </script>
+	</div>
+	</div>
+	<div id="content-area">
+		<div id="content">
+		<div id="form">
+		<div id="formtittle"><h2>Регистрација</h2></div>
+		<br>
+		<form name="registration" method="POST" action="register">
+		<div id="label1">Ваше корисничко име:</div> <div id="input1"><input type="text" id="username" placeholder="Унесите ваше корисничко име"></input></div><br>
+		<div id="label2">Ваша е-адреса:</div> <div id="input2"><input type="email" id="email" placeholder="Унесите вашу е-адресу"></input></div><br>
+		<div id="label3">Ваша лозинка:</div> <div id="input3"><input type="password" id="password" placeholder="Унесите вашу лозинку"></input></div><br>
+		<div id="label4">Потврдите лозинку:</div> <div id="input4"><input type="password" id="passwordrepeat" placeholder="Унесите опет вашу лозинку"></input></div><br>
+		<br><br>
+		<input type="button" name="submit" id="registrationbutton"value="Региструј се" onclick="register()"></input>
+		</form>
+		</div>
+		
+		</div>
+	</div>
+	 <div id="footer">
+	<div id="footer-1">
+				
+					<a href="pocetna.html"><img src="images/logo.png" width="90" height="50" alt="" /></a> 
+	<div id="line"><img src="images/line.png" width="3" height="90" alt="" /> </div>	
+		<div id="navigation">
+		<nav>
+		<a href="pocetna.html">Почетна</a> 
+        <a href="novosti.html">Новости</a> 
+        <a href="rukopisi.html">Рукописи</a> 
+       <a href="galerija.html">Галерија</a>
+       <a href="kontakt.html">Контакт</a>
+           
+		</nav>
+		</div>
+	</div>
+	<div id="footer-2">
+		<label>Copyright: Технички Факултет "Михајло Пупин", Зрењанин</label>
+	</div>
+	<div id="icons">
+	<div class="rotiraj">
+		<div class="front"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" width="30" height="30" alt="" /></a></div>
+		<div class="back"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" width="30" height="30" alt="" /></a></div>
+	</div>
+	<div class="rotiraj">
+		<div class="front"><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" width="30" height="30" alt="" /></a></div>
+		<div class="back"><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" width="30" height="30" alt="" /></a></div>
+	</div>
+</div>
+</div>
+</div>
+<!-- End Save for Web Slices -->
+</body>
+</html>

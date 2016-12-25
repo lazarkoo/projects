@@ -1,0 +1,77 @@
+#contactform{
+	position: absolute;
+	left:3%;
+	top:2%;
+	width:45%;
+	height:90%;
+	font-size:1em;
+}
+
+#contacttittle{
+	position:absolute;
+	left:25%;
+}
+
+#contactlabel1{
+	position:absolute;
+	left:0%;
+	top:20%;
+}
+
+#contactlabel2{
+	position:absolute;
+	left:0%;
+	top:30%;
+}
+
+#contactlabel3{
+	position:absolute;
+	left:0%;
+	top:40%;
+}
+
+#contactinput1 {
+	position:absolute;
+	left:25%;
+	top:17%;
+}
+
+#contactinput2 {
+	position:absolute;
+	left:25%;
+	top:27%;
+}
+
+#contactinput3{
+	position:absolute;
+	left:25%;
+	top:37%;
+}
+
+#contactbutton{
+	position:absolute;
+	left:25%;
+	top:60%;
+    background-color: #0fa4a9;
+    border: none;
+	font-weight:bold;
+	border-radius:20px;
+	width:100px;
+	height:30px;
+	font-size:13;
+	background: radial-gradient(white, #0fa4a9);
+}
+
+#contactbutton:hover {   
+    transform: scale(1.03) ;
+}
+
+#map{
+	position: absolute;
+	left:50%;
+	top:2%;
+	width:45%;
+	height:90%;
+	font-family: Conthrax;
+	font-size:1em;
+}

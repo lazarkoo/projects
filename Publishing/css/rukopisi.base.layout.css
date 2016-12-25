@@ -1,0 +1,31 @@
+#delo{
+	position: relative;
+	left:4%;
+	top:3%;
+	width:30%;
+	height:36%;
+    display: inline-block;
+    margin: 5px;
+}
+
+#delo:hover{
+	background: rgba(150,160,160,0.3);
+}
+
+
+#delo-text{
+	position: absolute;
+	left:35%;
+	top:12%;
+	width:60%;
+	font-size:0.8em;
+	height:40%;
+} 
+
+#image-delo img{
+	position: absolute;
+	left:4%;
+	top:8%;
+	width:27%;
+	height:83%;
+} 

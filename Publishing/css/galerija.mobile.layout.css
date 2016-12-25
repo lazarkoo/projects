@@ -1,0 +1,17 @@
+
+#banner-fade {
+	position:relative;
+	left:30%;
+	top:15%;
+	width:40%;
+	height:20%;
+}
+@media screen and (max-width: 600px) {
+#banner-fade {
+	position:relative;
+	left:10%;
+	top:15%;
+	width:80%;
+	height:35%;
+}
+}

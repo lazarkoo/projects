@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "contact.mobile.layout.css";
+@import "novosti.mobile.layout.css";
+@import "rukopisi.mobile.layout.css";
+@import "galerija.mobile.layout.css";
+@import "forms.mobile.css";
+
+* 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+	font-family: Conthrax;
+    src: url(conthrax.ttf);
+}
+body{
+	width:100%;
+	height:100%;
+	margin: auto;
+    padding: 0%;
+	color:black;
+	background:  url(../images/background.jpg)no-repeat center center fixed;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+a {
+	color:black;
+	text-decoration: none; 
+}
+
+
+#top{
+	position:relative;
+	left:0%;
+	top:0%;
+	width:100%;
+	height:5%;
+	font-family: Contrax;
+}
+#mail{
+	position:absolute;
+	left:0%;
+	top:0%;
+	width:55%;
+	height:100%;
+	font-family: Conthrax;
+}
+
+#mail img{
+	position:relative;
+	left:3%;
+	top:28%;
+	width:15px;
+	height:15px;
+}
+
+#mail label{
+	position:relative;
+	left:3%;
+	top:20%;
+	font-size:0.5em;
+	width:10%;
+	height:30%;
+	text-align:left;
+}
+
+#login{
+	position:relative;
+	left:55%;
+	top:0%;
+	width:45%;
+	height:100%;
+	font-family: Conthrax;
+	text-align:right;
+}
+
+#login label {
+	position:relative;
+	top:20%;
+	font-size:0.7em;
+}
+.poledjina {
+	display:none;
+}
+#header{
+	position:relative;
+	left:0%;
+	top:0%;
+	width:100%;
+	height:10%;
+	background-color: rgba(54,164,169,0.6);
+}
+#logo{
+	position:relative;
+	left:0%;
+	top:0%;
+	width:20%;
+	height:100%;
+}
+
+#logo img{
+	position:relative;
+	width:100%;
+	left:20%;
+	height:80%
+}
+
+#menu{
+	display:none;
+	
+}
+
+#content-area {
+	position:absolute;
+	left:0%;
+	top:15%;
+	width:100%;
+	height:74%;
+}
+
+#content{
+	background: rgba(255,255,255,0.5);
+	position:relative;
+	left:5%;
+	top:6%;
+	width:91%;
+	height:88%;
+	font-family: Conthrax;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.edgeLoad-EDGE-242535258 {
+ visibility:hidden; 
+	}
+.EDGE-242535258{
+	display: none !important;
+	width:100% !important;
+	position:absolute;
+	left:0% !important;
+	top:20%;
+	
+}
+.responsiveimg{
+	left:25%;
+	top:30%;
+	position:relative;
+}
+@media screen and (min-width: 1023px){
+.responsiveimg {
+	display: none;
+}
+}
+#content-scroll{
+	background: rgba(255,255,255,0.5);
+	position:absolute;
+	left:5%;
+	top:6%;
+	width:91%;
+	height:88%;
+	font-family: Conthrax;
+	box-shadow: 10px 10px 5px #888888;
+	overflow-y:scroll;
+}
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+border: 1px solid #0fa4a9;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #0fa4a9;  
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #1edce5;  
+}
+
+/*footer*/
+
+#footer{
+	position:absolute;
+	left:0%;
+	top:89%;
+	width:100%;
+	height:11%;
+	background-color: rgba(54,164,169,0.6);
+	font-family: Conthrax;
+	
+}
+
+#footer-1 {
+	display:none;
+	
+}
+
+#footer-2 {
+	position:relative;
+	left:0%;
+	width:75%;
+	height:100%;
+	text-align:center;
+}
+
+#footer-2 label{
+	position:relative;
+	left:2%;
+	top:35%;
+	font-size:0.7em;
+}
+#icons{
+	position:absolute;
+	left:73%;
+	top:10%;
+	width:25%;
+	height:80%;
+}
+
+.rotiraj {
+	float:right;
+	width:15px; height:15px; margin:15px; 
+}
+
+.rotiraj .front{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	background-image: url(facebook.png); 
+	width:15px; height:15px;
+	border-radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+
+}
+
+
+.rotiraj .back{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	width:15px; height:15px;
+	border-radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+
+}
+
+.rotiraj:hover > .front{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+
+.rotiraj:hover > .back{
+	transform: perspective( 600px ) rotateY( 0deg );
+}

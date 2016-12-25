@@ -1,0 +1,203 @@
+
+/*forme*/
+
+::-webkit-input-placeholder {
+    color: rgba(54,164,169, 0.7);
+}
+
+input{
+    background: transparent;
+    border: 2px #0fa4a9 solid;
+    border-radius: 5px;
+    font-family: Conthrax;
+	font-size:0.9em;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    width: 350px;
+	height:40px;
+}
+
+
+textarea {
+    background: transparent;
+    border: 2px #0fa4a9 solid;
+    border-radius: 5px;
+    font-family: Conthrax;
+	font-size:0.9em;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    width: 350px;
+    height: 60px;
+}
+
+
+#form{
+	position: relative;
+	left:15%;
+	top:5%;
+	width:60%;
+	height:80%;
+	font-family: Conthrax;
+	font-size:8;
+}
+
+#formtittle{
+	position: relative;
+	left:26%;
+}
+#label1 {
+	position: absolute;
+	left:0%;
+	top:15%;
+}
+#label2 {
+	position: absolute;	
+	left:0%;
+	top:32%;
+}
+
+#label3 {
+	position: absolute;	
+	left:0%;
+	top:49%;
+}
+
+#label4 {
+	position: absolute;	
+	left:0%;
+	top:66%;
+}
+
+#input1 {
+	position: absolute;
+	left:0%;
+	top:20%;
+	font-size:0.9em;
+}
+
+#input2{
+	position: absolute;
+	left:0%;
+	top:37%;
+	font-size:0.9em;
+}
+
+#input3{
+	position: absolute;
+	left:0%;
+	top:54%;
+	font-size:0.9em;
+}
+
+#input4{
+	position: absolute;
+	left:0%;
+	top:71%;
+	font-size:0.9em;
+}
+
+#registrationbutton{
+	position: absolute;
+	left:0%;
+	top:90%;
+    background-color: #0fa4a9;
+    border: none;
+	font-weight:bold;
+	border-radius:15;
+	width:60%;
+	height:5%;
+	font-size:10;
+	background: radial-gradient(white, #0fa4a9);
+}
+
+#loginbutton{
+	position: absolute;
+	left:0%;
+	top:50%;
+    background-color: #0fa4a9;
+    border: none;
+	font-weight:bold;
+	border-radius:15;
+	width:60%;
+	height:5%;
+	font-size:10;
+	background: radial-gradient(white, #0fa4a9);
+}
+
+@media screen and (max-width: 300px) {
+
+#formtittle{
+	position: relative;
+	left:5%;
+}
+
+#form{
+	position: relative;
+	left:15%;
+	top:5%;
+	width:80%;
+	height:80%;
+	font-family: Conthrax;
+}
+#registrationbutton{
+	width:40%;
+}
+
+#loginbutton{
+	width:40%;
+}
+}
+@media screen and (min-width: 301px ){
+	#form{
+	position: relative;
+	left:5%;
+	top:5%;
+	width:80%;
+	height:80%;
+	font-family: Conthrax;
+	font-size:0.8em;
+}
+	
+	input{
+    background: transparent;
+    border: 2px #0fa4a9 solid;
+    border-radius: 5px;
+    font-family: Conthrax;
+	font-size:0.9em;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    width: 350px;
+	height:30px;
+}
+#loginbutton{
+	left:30%;
+	width:40%;
+}
+}
+
+@media screen and (min-width: 601px ){
+	#form{
+	position: relative;
+	left:5%;
+	top:5%;
+	width:80%;
+	height:80%;
+	font-family: Conthrax;
+}
+	
+	input{
+    background: transparent;
+    border: 2px #0fa4a9 solid;
+    border-radius: 5px;
+    font-family: Conthrax;
+	font-size:8;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    width: 500px;
+	height:30px;
+}
+}

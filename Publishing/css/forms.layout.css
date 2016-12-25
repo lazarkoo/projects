@@ -1,0 +1,133 @@
+
+/*forme*/
+
+::-webkit-input-placeholder {
+    color: rgba(54,164,169, 0.7);
+}
+
+input{
+    background: transparent;
+    border: 2px #0fa4a9 solid;
+    border-radius: 5px;
+	margin-left:10px;
+    font-family: Conthrax;
+	font-size:0.8em;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    width: 400px;
+	height:40px;
+}
+
+
+textarea {
+    background: transparent;
+    border: 2px #0fa4a9 solid;
+    border-radius: 5px;
+	margin-left:10px;
+    font-family: Conthrax;
+	font-size:0.8em;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    width: 400px;
+    height: 100px;
+}
+
+
+#form{
+	position: relative;
+	left:20%;
+	top:5%;
+	width:60%;
+	height:80%;
+	font-family: Conthrax;
+	font-size:1em;
+}
+
+#formtittle{
+	position: absolute;
+	left:26%;
+}
+#label1 {
+	position: absolute;
+	left:0%;
+	top:20%;
+}
+#label2 {
+	position: absolute;	
+	left:0%;
+	top:40%;
+}
+
+#label3 {
+	position: absolute;	
+	left:0%;
+	top:60%;
+}
+
+#label4 {
+	position: absolute;	
+	left:0%;
+	top:80%;
+}
+
+#input1 {
+	position: absolute;
+	left:30%;
+	top:18%;
+}
+
+#input2{
+	position: absolute;
+	left:30%;
+	top:38%;
+}
+
+#input3{
+	position: absolute;
+	left:30%;
+	top:58%
+}
+
+#input4{
+	position: absolute;
+	left:30%;
+	top:78%;
+}
+
+#registrationbutton{
+	position: absolute;
+	left:25%;
+	top:95%;
+    background-color: #0fa4a9;
+    border: none;
+	font-weight:bold;
+	border-radius:15;
+	width:15%;
+	height:8%;
+	font-size:10;
+	background: radial-gradient(white, #0fa4a9);
+}
+
+#loginbutton{
+	position: absolute;
+	left:25%;
+	top:55%;
+    background-color: #0fa4a9;
+    border: none;
+	font-weight:bold;
+	border-radius:15;
+	width:15%;
+	height:8%;
+	font-size:13;
+	background: radial-gradient(white, #0fa4a9);
+}
+
+#loginbutton:hover{
+	transform:scale(1.03);
+}
+
+#registrationbutton:hover{
+	transform:scale(1.03);
+}

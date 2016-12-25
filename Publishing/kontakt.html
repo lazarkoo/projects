@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>Издавачка Делатност</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/base.layout.css" type="text/css" />
+<link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/base.layout.mobile.css" type="text/css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- End Save for Web Styles -->
+<script type = "text/javascript">
+
+	function proveriPolja()
+	{
+		var name = document.getElementById('name').value.trim();
+		var email = document.getElementById('email').value.trim();
+		var message = document.getElementById('message').value.trim();
+		
+		if (name == "" ||  email == "" || message == "" )
+		{
+			alert("Молимо Вас попуните сва поља!");
+			return false;
+		}
+		
+		return true;
+		
+	}
+
+	function sendMessage()
+	{
+		if (proveriPolja()) document.contactform.submit();
+	}
+
+
+</script>
+</head>
+<body style="background-color:#FFFFFF; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;">
+<!-- Save for Web Slices (webdesign.psd) -->
+<div id="Table_01">
+	<div id="top">
+	<div id="mail">
+		<img src="images/mail.png" width="25" height="25"  />
+		<label>izdavackadelatnost@tfzr.uns.ac.rs</label>
+		
+	</div>
+	<div id="login">
+	<label><a href="login.html">Улогуј се</a> | <a href="register.html">Региструј се</a></label>
+	</div>
+	</div>
+	<div id="header">
+	<div id="logo">
+		<a href="pocetna.html"><img src="images/logo.png" width="200" height="90" alt="" /></a>
+	</div>
+	
+		<div id="menu">
+		<nav>
+			<div id="nav">
+			<ul>
+				<il><a href="pocetna.html">Почетна</a></il>
+				<il><a href="novosti.html">Новости</a></il>
+                <il><a href="rukopisi.html">Рукописи</a></il>
+                <il><a href="galerija.html">Галерија</a></il>
+                <il><a href="kontakt.html" class="active">Контакт</a></il> 
+			 </ul> 
+			 </div>
+		</nav>
+		    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="jquery.ultimate-burger-menu.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#nav').burgerMenu({
+                translate: true,
+                menuWidth: '50%',
+                menuHeight: '100%',
+                menuBorder: 'none',
+                animateSpeed: 500,
+                linkBorderBottom: 'none',
+				position: 'right',
+                keepButtonNextToMenu: true,
+                overlay: '#ffffff'
+            });
+        });
+    </script>
+	</div>
+	</div>
+	<div id="content-area">
+		<div id="content">
+		<div id="contactform">
+		<form name="contactform" method="POST" action="sendmail" >
+		<div id="contacttittle"><h2>Контакт</h2></div>
+		<br>
+		<div id="contactlabel1">Ваше име:</div> <div id="contactinput1"><input type="text" id="name" placeholder="Унесите ваше име"></input></div> <br>
+		<div id="contactlabel2">Ваша е-адреса:</div>  <div id="contactinput2"><input type="email" id="email" placeholder="Унесите вашу е-адресу"></input></div> <br>
+		<div id="contactlabel3">Ваша порука:</div>  <div id="contactinput3"><textarea id="message" placeholder="Унесите вашу поруку" ></textarea></div> 
+		<br><br>
+		<input type="button" name="submit" id="contactbutton" value="Пошаљи" onClick="sendMessage()" ></input>
+		</form>
+		</div>
+		<div id="map">
+		<h2>Пронађите нас</h2>
+		
+		<div class="googlemap">
+		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
+		</script>
+		<div  style='overflow:hidden;height:250px;width:350px;'>
+		<div id='gmap_canvas' style='height:250px;width:350px;'></div>
+		<div>
+		<small>
+		<a href="http://embedgooglemaps.com">									
+		embed google maps							
+		</a></small></div><div><small>
+		<a href="https://termsofusegenerator.net">terms of use example</a></small></div>
+		<style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+		<script type='text/javascript'>function init_map()
+		{var myOptions = {zoom:16,center:new google.maps.LatLng(45.379745956068135,20.38196185277865),
+		mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+		marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.379745956068135,20.38196185277865)});
+		infowindow = new google.maps.InfoWindow({content:'<strong>Технички Факултет "Михајло Пупин", Зрењанин</strong><br>Ђуре Ђаковића, Zrenjanin<br>'})
+		;google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
+		google.maps.event.addDomListener(window, 'load', init_map);</script>
+		</div>
+		<br><br>
+		<img src="images/location.png" width="15" height="15" alt=""/> Ђуре Ђаковића Ђуре Ђаковића бб, Зрењанин 23000<br><br>
+		<img src="images/phone.png" width="15" height="15" alt=""/> 023/550-515<br><br>
+		<img src="images/website.png" width="15" height="15" alt=""/> www.tfzr.uns.ac.rs<br><br>
+		</div>
+		</div>
+	</div>
+	 <div id="footer">
+	<div id="footer-1">
+				
+					<a href="pocetna.html"><img src="images/logo.png" width="90" height="50" alt="" /></a> 
+	<div id="line"><img src="images/line.png" width="3" height="90" alt="" /> </div>	
+		<div id="navigation">
+		<nav>
+		<a href="pocetna.html">Почетна</a> 
+        <a href="novosti.html">Новости</a> 
+        <a href="rukopisi.html">Рукописи</a> 
+       <a href="galerija.html">Галерија</a>
+       <a href="kontakt.html">Контакт</a>
+           
+		</nav>
+		</div>
+	</div>
+	<div id="footer-2">
+		<label>Copyright: Технички Факултет "Михајло Пупин", Зрењанин</label>
+	</div>
+	<div id="icons">
+	<div class="rotiraj">
+		<div class="front"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" width="30" height="30" alt="" /></a></div>
+		<div class="back"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" width="30" height="30" alt="" /></a></div>
+	</div>
+	<div class="rotiraj">
+		<div class="front"><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" width="30" height="30" alt="" /></a></div>
+		<div class="back"><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" width="30" height="30" alt="" /></a></div>
+	</d
+</div>
+</div>
+<!-- End Save for Web Slices -->
+</body>
+</html>
